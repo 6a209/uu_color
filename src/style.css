@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .color-cell {
+    @apply w-[50px] h-[50px] rounded-lg m-[5px] inline-block cursor-pointer;
+  }
+  .color-option {
+    @apply w-[35px] h-[35px] rounded-full cursor-pointer m-[3px];
+  }
+  .hint-dot {
+    @apply w-[15px] h-[15px] rounded-full inline-block;
+  }
+  .hints-grid {
+    @apply grid grid-cols-2 grid-rows-2 gap-1 w-[36px] h-[36px] place-items-center;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.animate-bounce-custom {
+  animation: bounce 0.4s;
+} 
